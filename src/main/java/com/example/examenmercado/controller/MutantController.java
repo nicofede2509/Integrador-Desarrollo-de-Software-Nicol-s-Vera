@@ -12,6 +12,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -28,6 +29,7 @@ public class MutantController {
             @ApiResponse(responseCode = "403", description = "Humano detectado."),
             @ApiResponse(responseCode = "400", description = "ADN inválido."),
     })
+    @PostMapping("/mutant")
     public ResponseEntity<Void> checkMutant(@Validated @RequestBody DnaRequest request){
         boolean isMutant = mutantService.analyzeDna(request.getDna());
         return isMutant ? ResponseEntity.ok().build() : ResponseEntity.status(HttpStatus.FORBIDDEN).build();

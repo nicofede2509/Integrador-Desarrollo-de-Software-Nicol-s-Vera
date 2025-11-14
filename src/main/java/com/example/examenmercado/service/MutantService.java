@@ -17,9 +17,6 @@ import java.util.Optional;
 public class MutantService {
     private final MutantDetector mutantDetector;
     private final DnaRecordRepository repository;
-
-    private String[] adn;
-
     public boolean analyzeDna(String[] adn){
         String dnaHash = calculateDnaHash(adn);
         Optional<DnaRecord> existing = repository.findByDnaHash(dnaHash);
@@ -32,6 +29,7 @@ public class MutantService {
                 .isMutant(isMutant)
                 .createdAt(LocalDateTime.now())
                 .build();
+        repository.save(record);
         return isMutant;
     }
 
