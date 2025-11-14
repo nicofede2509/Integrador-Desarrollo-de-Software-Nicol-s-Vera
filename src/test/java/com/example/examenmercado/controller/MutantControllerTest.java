@@ -63,7 +63,7 @@ public class MutantControllerTest {
         mockMvc.perform(post("/mutant")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(requestBody)))
-                .andExpect(status().isForbidden()); // Esperamos un 403 Forbidden
+                .andExpect(status().isForbidden());
     }
 
     @Test

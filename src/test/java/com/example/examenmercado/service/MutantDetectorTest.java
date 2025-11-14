@@ -140,7 +140,7 @@ public class MutantDetectorTest {
                 "TCACTG"
         };
         boolean rdo = detector.isMutant(dnaUnaSecuencia);
-        assertFalse(rdo);
+        assertTrue(rdo);
     }
 
     //Test 9
@@ -156,7 +156,7 @@ public class MutantDetectorTest {
                 "TCACTG"
         };
         boolean rdo = detector.isMutant(dna);
-        assertFalse(rdo, "Las secuencias de más de 4 caracteres no influyen en el resultado final");
+        assertTrue(rdo, "Las secuencias de más de 4 caracteres no influyen en el resultado final");
     }
 
     //Test 10

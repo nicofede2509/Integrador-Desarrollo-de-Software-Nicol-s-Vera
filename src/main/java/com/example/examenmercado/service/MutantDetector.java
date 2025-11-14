@@ -2,12 +2,15 @@ package com.example.examenmercado.service;
 
 import org.springframework.stereotype.Service;
 
+import java.util.regex.Pattern;
+
 @Service
 public class MutantDetector {
     public boolean isMutant(String[] adn){
-        /*if (!isValidDna(dna)){
+        // Validamos la cadena ingresada, esto es solo para los Tests unitarios con JUnit.
+        if (!validarDatos(adn)) {
             return false;
-        }*/
+        }
         int contador = 0;
         int n = adn.length;
         char[][] secuenciaAdn = new char[n][n];
@@ -71,5 +74,28 @@ public class MutantDetector {
         return matrix[row - 1][col + 1] == base &&
                 matrix[row - 2][col + 2] == base &&
                 matrix[row - 3][col + 3] == base;
+    }
+
+    private boolean validarDatos(String[] adn){
+        final Pattern DNA_PATTERN = Pattern.compile("^[ATCG]+$");
+        final int MIN_SIZE = 4;
+        if (adn == null || adn.length == 0) {
+            return false;
+        }
+
+        int n = adn.length;
+        if (n < MIN_SIZE) {
+            return false;
+        }
+
+        for (String row : adn) {
+            if (row == null || row.length() != n) {
+                return false;
+            }
+            if (!DNA_PATTERN.matcher(row).matches()) {
+                return false;
+            }
+        }
+        return true;
     }
 }

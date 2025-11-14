@@ -30,7 +30,7 @@ public class MutantController {
             @ApiResponse(responseCode = "400", description = "ADN inválido."),
     })
     @PostMapping("/mutant")
-    public ResponseEntity<Void> checkMutant(@Validated @RequestBody DnaRequest request){
+    public ResponseEntity<Void> checkMutant(@Validated @RequestBody DnaRequest request){ // Aquí se usan ValidDnaSequence para la capa de APIS.
         boolean isMutant = mutantService.analyzeDna(request.getDna());
         return isMutant ? ResponseEntity.ok().build() : ResponseEntity.status(HttpStatus.FORBIDDEN).build();
     }
