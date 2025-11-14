@@ -27,15 +27,12 @@ public class ValidDnaSequenceValidator implements ConstraintValidator<ValidDnaSe
             return false;
         }
         for (String row : dna) {
-
             if (row == null || row.length() != n) {
                 return false;
             }
 
-            for (char c : row.toCharArray()) {
-                if (c != 'A' && c != 'T' && c != 'C' && c != 'G') {
-                    return false;
-                }
+            if (!DNA_PATTERN.matcher(row).matches()) {
+                return false;
             }
         }
         return true;

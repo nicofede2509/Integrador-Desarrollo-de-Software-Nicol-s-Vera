@@ -4,37 +4,37 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class MutantDetector {
-    public boolean isMutant(String[] dna){
+    public boolean isMutant(String[] adn){
         int contador = 0;
-        int n = dna.length;
-        char[][] dnaSequence = new char[n][n];
+        int n = adn.length;
+        char[][] secuenciaAdn = new char[n][n];
         for (int i = 0; i < n; i++) {
-            dnaSequence[i] = dna[i].toCharArray();
+            secuenciaAdn[i] = adn[i].toCharArray();
         }
         final int SEQUENCE_LENGTH = 4;
         for(int i = 0; i < n; i++){
             for(int j = 0; j < n; j++){
-                if(j<= n - SEQUENCE_LENGTH){
-                    if(checkHorizontal(dnaSequence, i, j)){
+                if(j <= n - SEQUENCE_LENGTH){
+                    if(checkHorizontal(secuenciaAdn, i, j)){
                         contador++;
                     }
                 }
                 if (i <= n - SEQUENCE_LENGTH) {
-                    if (checkVertical(dnaSequence, i, j)) {
+                    if (checkVertical(secuenciaAdn, i, j)) {
                         contador++;
                     }
                 }
                 if (i <= n - SEQUENCE_LENGTH && j <= n - SEQUENCE_LENGTH) {
-                    if (checkDiagonal(dnaSequence, i, j)) {
+                    if (checkDiagonal(secuenciaAdn, i, j)) {
                         contador++;
                     }
                 }
                 if (i >= SEQUENCE_LENGTH - 1 && j <= n - SEQUENCE_LENGTH) {
-                    if (checkDiagonalContraria(dnaSequence, i, j)) {
+                    if (checkDiagonalContraria(secuenciaAdn, i, j)) {
                         contador++;
                     }
                 }
-                if (contador>=2){
+                if (contador>1){
                     return true;
                 }
             }

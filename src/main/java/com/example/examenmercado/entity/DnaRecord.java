@@ -17,7 +17,7 @@ public class DnaRecord {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "createdAt", nullable = false)
+    @Column(name = "created_at", nullable = false)
     private LocalDateTime fechaCreacion;
 
     @Column(nullable = false)
