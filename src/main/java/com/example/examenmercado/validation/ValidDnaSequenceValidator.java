@@ -11,18 +11,13 @@ public class ValidDnaSequenceValidator implements ConstraintValidator<ValidDnaSe
     private static final int MIN_SIZE = 4;
 
     @Override
-    public void initialize(ValidDnaSequence constraintAnnotation) {
-        ConstraintValidator.super.initialize(constraintAnnotation);
-    }
-
-    @Override
     public boolean isValid(String[] dna, ConstraintValidatorContext context) {
 
         if(dna == null || dna.length == 0){
             return false;
         }
 
-        final int n = dna.length;
+        int n = dna.length;
         if (n < MIN_SIZE) {
             return false;
         }

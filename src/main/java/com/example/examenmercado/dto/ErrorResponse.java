@@ -1,14 +1,10 @@
 package com.example.examenmercado.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
-@Setter
-@Getter
+@Data
 @AllArgsConstructor
 @Builder
 public class ErrorResponse {

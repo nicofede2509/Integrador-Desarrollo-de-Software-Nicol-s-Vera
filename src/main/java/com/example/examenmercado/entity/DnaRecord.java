@@ -9,20 +9,20 @@ import java.time.LocalDateTime;
 @Setter
 @Getter
 @Builder
+@Table(name = "dna_records")
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "dna_records")
 public class DnaRecord {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "created_at", nullable = false)
-    private LocalDateTime fechaCreacion;
+    private LocalDateTime createdAt;
 
-    @Column(nullable = false)
+    @Column(name = "is_mutant", nullable = false)
     private boolean isMutant;
 
-    @Column(unique = true, length = 64)
+    @Column(name = "dna_hash", unique = true, nullable = false)
     private String dnaHash;
 }

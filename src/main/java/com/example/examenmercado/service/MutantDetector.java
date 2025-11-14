@@ -5,6 +5,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class MutantDetector {
     public boolean isMutant(String[] adn){
+        /*if (!isValidDna(dna)){
+            return false;
+        }*/
         int contador = 0;
         int n = adn.length;
         char[][] secuenciaAdn = new char[n][n];
