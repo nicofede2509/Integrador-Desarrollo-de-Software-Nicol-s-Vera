@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ExamenMercado.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ExamenMercado.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ExamenMercado.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ExamenMercado.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/IntegradorMercado_NicolasVera.iml" filepath="$PROJECT_DIR$/.idea/IntegradorMercado_NicolasVera.iml" />
     </modules>
   </component>
 </project>

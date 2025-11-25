@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb2de4dd-82de-4f1d-9a05-307c1939b4d5" name="Changes" comment="Proyecto integrador completo">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/ExamenMercado.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/ExamenMercado.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamenMercado/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/controller/MutantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/controller/MutantController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/repository/DnaRecordRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/repository/DnaRecordRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/service/MutantDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/service/MutantDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/service/MutantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/service/MutantService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/service/StatsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/service/StatsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/validation/ValidDnaSequenceValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/validation/ValidDnaSequenceValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamenMercado/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamenMercado/src/test/java/com/example/examenmercado/controller/MutantControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/test/java/com/example/examenmercado/controller/MutantControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamenMercado/src/test/java/com/example/examenmercado/service/StatsServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/test/java/com/example/examenmercado/service/StatsServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenMercado/src/test/java/com/example/examenmercado/service/MutantServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/test/java/com/example/examenmercado/service/MutantServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +103,7 @@
     "Spring Boot.MutantDetectorApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Ingenieria en Sistemas/3° Ingenieria de Sistemas de Informacion/Segundo semestre/Desarrollo de Software/Integrador/IntegradorMercado Nicolás Vera",
+    "last_opened_file_path": "C:/Users/Nicolas/Downloads/IntegradorMercado_NicolasVera",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -224,7 +217,9 @@
       <workItem from="1763996938497" duration="2477000" />
       <workItem from="1764001008550" duration="114000" />
       <workItem from="1764001168585" duration="787000" />
-      <workItem from="1764077841125" duration="6245000" />
+      <workItem from="1764077841125" duration="6886000" />
+      <workItem from="1764084820166" duration="592000" />
+      <workItem from="1764085583499" duration="1286000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit">
       <option name="closed" value="true" />
@@ -434,7 +429,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764078100396</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Proyecto integrador completo">
+      <option name="closed" value="true" />
+      <created>1764084333347</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1764084333347</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

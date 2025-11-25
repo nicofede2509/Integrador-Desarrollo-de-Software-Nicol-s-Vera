@@ -9,13 +9,14 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.times;
+import static org.mockito.ArgumentMatchers.anyString;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
@@ -98,5 +99,17 @@ public class MutantServiceTest {
         assertNotNull(recordGuardado.getDnaHash(), "El Hash no puede ser nulo");
         assertEquals(64, recordGuardado.getDnaHash().length(), "El Hash SHA-256 debe tener 64 caracteres");
         assertFalse(recordGuardado.isMutant(), "Se debería haber guardado como humano (false)");
+    }
+
+    @Test
+    @DisplayName("Debe eliminar un registro correctamente")
+    void testDeleteDnaRecord() {
+        String[] dna = {"ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"};
+        when(repository.deleteByDnaHash(anyString())).thenReturn(1L);
+
+        boolean deleted = mutantService.deleteDnaRecord(dna);
+
+        assertTrue(deleted);
+        verify(repository, times(1)).deleteByDnaHash(anyString());
     }
 }

@@ -8,14 +8,12 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 
 @RestController
@@ -38,9 +36,14 @@ public class MutantController {
 
     @GetMapping("/stats")
     public ResponseEntity<StatsResponse> getStats(
-            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDateTime dateStart,
-            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDateTime dateEnd){
-        StatsResponse stats = statsService.getStats(dateStart, dateEnd);
+            @RequestParam(required = false) String dateStart,
+            @RequestParam(required = false) String dateEnd
+    ) {
+        // Convertimos manualmente de String a LocalDate para evitar errores automáticos 400
+        LocalDate start = (dateStart != null) ? LocalDate.parse(dateStart) : null;
+        LocalDate end = (dateEnd != null) ? LocalDate.parse(dateEnd) : null;
+
+        StatsResponse stats = statsService.getStats(start, end);
         return ResponseEntity.ok(stats);
     }
 

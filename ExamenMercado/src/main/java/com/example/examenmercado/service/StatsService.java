@@ -5,6 +5,7 @@ import com.example.examenmercado.repository.DnaRecordRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
@@ -13,12 +14,12 @@ import java.time.LocalTime;
 public class StatsService {
     private final DnaRecordRepository repositorio;
 
-    public StatsResponse getStats(LocalDateTime fechaInicio, LocalDateTime fechaFin){
+    public StatsResponse getStats(LocalDate fechaInicio, LocalDate fechaFin){
         long contadorMutantes = 0;
         long contadorHumanos = 0;
         if(fechaInicio != null && fechaFin != null){
-            LocalDateTime inicio = fechaInicio.toLocalDate().atStartOfDay();
-            LocalDateTime fin = fechaFin.toLocalDate().atTime(LocalTime.MAX);
+            LocalDateTime inicio = fechaInicio.atStartOfDay();
+            LocalDateTime fin = fechaFin.atTime(LocalTime.MAX);
             contadorMutantes = repositorio.countByIsMutantAndCreatedAtBetween(true, inicio, fin);
             contadorHumanos = repositorio.countByIsMutantAndCreatedAtBetween(false, inicio, fin);
         }else{
