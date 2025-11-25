@@ -1,9 +1,11 @@
 package com.example.examenmercado.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.regex.Pattern;
 
+@Slf4j
 @Service
 public class MutantDetector {
     public boolean isMutant(String[] adn){
@@ -41,39 +43,57 @@ public class MutantDetector {
                     }
                 }
                 if (contador>1){
+                    log.debug("La cadena corresponde a la de un MUTANTE.");
                     return true;
                 }
             }
         }
+        log.debug("La cadena corresponde a un humano.");
         return false;
     }
 
     private boolean checkHorizontal(char[][] matrix, int row, int col) {
         final char base = matrix[row][col];
-        return matrix[row][col + 1] == base &&
+        boolean found = matrix[row][col + 1] == base &&
                 matrix[row][col + 2] == base &&
                 matrix[row][col + 3] == base;
+        if (found) {
+            log.debug("Horizontal encontrada: {}{}{}{} en Fila {} Col {}", base, base, base, base, row, col);
+        }
+        return found;
     }
 
     private boolean checkVertical(char[][] matrix, int row, int col) {
         final char base = matrix[row][col];
-        return matrix[row + 1][col] == base &&
+        boolean found = matrix[row + 1][col] == base &&
                 matrix[row + 2][col] == base &&
                 matrix[row + 3][col] == base;
+        if (found) {
+            log.debug("Vertical encontrada: {}{}{}{} en Fila {}, Col {}", base, base, base, base, row, col);
+        }
+        return found;
     }
 
     private boolean checkDiagonal(char[][] matrix, int row, int col) {
         final char base = matrix[row][col];
-        return matrix[row + 1][col + 1] == base &&
+        boolean found = matrix[row + 1][col + 1] == base &&
                 matrix[row + 2][col + 2] == base &&
                 matrix[row + 3][col + 3] == base;
+        if (found) {
+            log.debug("Diagonal encontrada: {}{}{}{} en Fila {} Col {}", base, base, base, base, row, col);
+        }
+        return found;
     }
 
     private boolean checkDiagonalContraria(char[][] matrix, int row, int col) {
         final char base = matrix[row][col];
-        return matrix[row - 1][col + 1] == base &&
+        boolean found = matrix[row - 1][col + 1] == base &&
                 matrix[row - 2][col + 2] == base &&
                 matrix[row - 3][col + 3] == base;
+        if (found) {
+            log.debug("Diagonal encontrada: {}{}{}{} en Fila {} Col {}", base, base, base, base, row, col);
+        }
+        return found;
     }
 
     private boolean validarDatos(String[] adn){

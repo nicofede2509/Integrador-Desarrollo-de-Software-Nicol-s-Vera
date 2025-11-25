@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cb2de4dd-82de-4f1d-9a05-307c1939b4d5" name="Changes" comment="Proyecto integrador completo">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/ExamenMercado.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/ExamenMercado.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenMercado/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/controller/MutantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/controller/MutantController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/repository/DnaRecordRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/repository/DnaRecordRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/service/MutantDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/service/MutantDetector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/service/MutantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/service/MutantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/service/StatsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/service/StatsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/validation/ValidDnaSequenceValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/main/java/com/example/examenmercado/validation/ValidDnaSequenceValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenMercado/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenMercado/src/test/java/com/example/examenmercado/controller/MutantControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/test/java/com/example/examenmercado/controller/MutantControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamenMercado/src/test/java/com/example/examenmercado/service/StatsServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamenMercado/src/test/java/com/example/examenmercado/service/StatsServiceTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/ExamenMercado">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/ExamenMercado">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ExamenMercado" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Exception" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;nicofede2509&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nicofede2509/Integrador-Desarrollo-de-Software-Nicol-s-Vera.git&quot;,
+    &quot;accountId&quot;: &quot;d34316ab-478b-4513-af0f-67511ae9ec50&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="35Luc50odsIBMgpIMQF5WqWkVUT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build ExamenMercado.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.MutantControllerTest.executor": "Run",
+    "Gradle.MutantDetectorTest.executor": "Run",
+    "Gradle.MutantDetectorTest.isMutantTest.executor": "Run",
+    "Gradle.StatsServiceTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ExamenMercadoApplication.executor": "Run",
+    "Spring Boot.MutantDetectorApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Ingenieria en Sistemas/3° Ingenieria de Sistemas de Informacion/Segundo semestre/Desarrollo de Software/Integrador/IntegradorMercado Nicolás Vera",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Gradle.MutantControllerTest">
+    <configuration name="MutantControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ExamenMercado" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.examenmercado.controller.MutantControllerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MutantDetectorTest.isMutantTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ExamenMercado" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.examenmercado.service.MutantDetectorTest.isMutantTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MutantDetectorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="ExamenMercado.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.examenmercado.MutantDetectorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.MutantControllerTest" />
+        <item itemvalue="Gradle.MutantDetectorTest.isMutantTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb2de4dd-82de-4f1d-9a05-307c1939b4d5" name="Changes" comment="" />
+      <created>1762901748947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762901748947</updated>
+      <workItem from="1762901750728" duration="7097000" />
+      <workItem from="1762908994420" duration="3360000" />
+      <workItem from="1762974151640" duration="593000" />
+      <workItem from="1763057850107" duration="3531000" />
+      <workItem from="1763071216523" duration="32000" />
+      <workItem from="1763071271083" duration="1000" />
+      <workItem from="1763135443658" duration="17665000" />
+      <workItem from="1763158478001" duration="10669000" />
+      <workItem from="1763174923614" duration="16000" />
+      <workItem from="1763175017687" duration="751000" />
+      <workItem from="1763175941949" duration="146000" />
+      <workItem from="1763390506034" duration="2227000" />
+      <workItem from="1763393407443" duration="1353000" />
+      <workItem from="1763993699749" duration="2671000" />
+      <workItem from="1763996791637" duration="2000" />
+      <workItem from="1763996938497" duration="2477000" />
+      <workItem from="1764001008550" duration="114000" />
+      <workItem from="1764001168585" duration="787000" />
+      <workItem from="1764077841125" duration="6245000" />
+    </task>
+    <task id="LOCAL-00001" summary="Primer commit">
+      <option name="closed" value="true" />
+      <created>1762902348130</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1762902348130</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Primer Commit">
+      <option name="closed" value="true" />
+      <created>1762903845614</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762903845614</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Primer Commit">
+      <option name="closed" value="true" />
+      <created>1762903881484</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1762903881484</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Primer Commit">
+      <option name="closed" value="true" />
+      <created>1762904001191</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762904001191</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Método isMutant() y test del método">
+      <option name="closed" value="true" />
+      <created>1762914096023</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762914096023</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Metodo GetMapping, manejo de excepciones y obtener stats">
+      <option name="closed" value="true" />
+      <created>1763148917137</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1763148917137</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Metodod en endpoints, calculo de hash, clase StatsResponse completa y clase StatsService completa">
+      <option name="closed" value="true" />
+      <created>1763153303928</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1763153303928</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Metodos en endpoints, cálculo de hash, clase StatsResponse completa y clase StatsService completa">
+      <option name="closed" value="true" />
+      <created>1763153611759</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1763153611759</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Metodos en endpoints, cálculo de hash, clase StatsResponse completa y clase StatsService completa">
+      <option name="closed" value="true" />
+      <created>1763153845535</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1763153845535</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Tests de MutantDetector">
+      <option name="closed" value="true" />
+      <created>1763156177460</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1763156177460</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Tests de StatsService">
+      <option name="closed" value="true" />
+      <created>1763157777347</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1763157777347</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Tests de MutantService">
+      <option name="closed" value="true" />
+      <created>1763157995363</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1763157995363</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Tests de MutantController">
+      <option name="closed" value="true" />
+      <created>1763160344010</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1763160344010</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Integrador Completo">
+      <option name="closed" value="true" />
+      <created>1763163327017</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1763163327017</updated>
+    </task>
+    <task id="LOCAL-00015" summary="ReadMe Integrador Completo">
+      <option name="closed" value="true" />
+      <created>1763172762735</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1763172762735</updated>
+    </task>
+    <task id="LOCAL-00016" summary="ReadMe Integrador Completo">
+      <option name="closed" value="true" />
+      <created>1763172820087</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1763172820087</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Trabajo Integrador Completo">
+      <option name="closed" value="true" />
+      <created>1763390672055</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1763390672055</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Corrección archivo DockerFile">
+      <option name="closed" value="true" />
+      <created>1763391081299</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1763391081299</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Corrección archivo DockerFile">
+      <option name="closed" value="true" />
+      <created>1763391296098</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1763391296098</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Corrección archivo DockerFile">
+      <option name="closed" value="true" />
+      <created>1763391790963</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1763391790963</updated>
+    </task>
+    <task id="LOCAL-00021" summary="README completo">
+      <option name="closed" value="true" />
+      <created>1763393455388</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1763393455388</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Corrección archivo application.properties">
+      <option name="closed" value="true" />
+      <created>1763393514165</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1763393514165</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Archivo README completo">
+      <option name="closed" value="true" />
+      <created>1763394076014</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1763394076014</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Proyecto integrador completo">
+      <option name="closed" value="true" />
+      <created>1763995194564</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1763995194564</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Proyecto integrador completo">
+      <option name="closed" value="true" />
+      <created>1763996522405</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1763996522405</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Proyecto integrador completo">
+      <option name="closed" value="true" />
+      <created>1764078100396</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1764078100396</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Primer commit" />
+    <MESSAGE value="Primer Commit" />
+    <MESSAGE value="Método isMutant()" />
+    <MESSAGE value="Método isMutant() y test del método" />
+    <MESSAGE value="Metodo GetMapping," />
+    <MESSAGE value="Metodo GetMapping, manejo de excepciones y obtener stats" />
+    <MESSAGE value="Metodod en endpoints, calculo de hash, clase StatsResponse completa y clase StatsService completa" />
+    <MESSAGE value="Metodos en endpoints, cálculo de hash, clase StatsResponse completa y clase StatsService completa" />
+    <MESSAGE value="Tests de MutantDetector" />
+    <MESSAGE value="Tests de StatsService" />
+    <MESSAGE value="Tests de MutantService" />
+    <MESSAGE value="Tests de MutantController" />
+    <MESSAGE value="Integrador Completo" />
+    <MESSAGE value="ReadMe Integrador Completo" />
+    <MESSAGE value="Trabajo Integrador Completo" />
+    <MESSAGE value="Corrección archivo DockerFile" />
+    <MESSAGE value="README completo" />
+    <MESSAGE value="Corrección archivo application.properties" />
+    <MESSAGE value="Archivo README completo" />
+    <MESSAGE value="Proyecto integrador completo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Proyecto integrador completo" />
+  </component>
+</project>

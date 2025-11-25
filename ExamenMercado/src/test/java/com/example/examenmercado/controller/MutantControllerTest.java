@@ -10,8 +10,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.mockito.ArgumentMatchers.any;
@@ -31,10 +31,10 @@ public class MutantControllerTest {
     @Autowired
     private ObjectMapper objectMapper; // Convierte objetos JAVA a JSON y viceversa.
 
-    @MockBean
+    @MockitoBean
     private MutantService mutantService;
 
-    @MockBean
+    @MockitoBean
     private StatsService statsService;
 
 
@@ -107,7 +107,7 @@ public class MutantControllerTest {
     void testGetStats_Devuelve200_Y_Estadisticas() throws Exception {
         StatsResponse statsDePrueba = new StatsResponse(100L, 40L, 0.4);
 
-        when(statsService.getRatio()).thenReturn(statsDePrueba);
+        when(statsService.getStats(null, null)).thenReturn(statsDePrueba);
 
         mockMvc.perform(get("/stats")
                         .contentType(MediaType.APPLICATION_JSON))

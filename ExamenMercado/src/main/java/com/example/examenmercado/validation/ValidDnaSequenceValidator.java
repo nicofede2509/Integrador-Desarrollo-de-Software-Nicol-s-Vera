@@ -9,6 +9,8 @@ public class ValidDnaSequenceValidator implements ConstraintValidator<ValidDnaSe
 
     private static final Pattern DNA_PATTERN = Pattern.compile("^[ATCG]+$");
     private static final int MIN_SIZE = 4;
+    private static final int MAX_SIZE = 1000;
+
 
     @Override
     public boolean isValid(String[] dna, ConstraintValidatorContext context) {
@@ -18,9 +20,10 @@ public class ValidDnaSequenceValidator implements ConstraintValidator<ValidDnaSe
         }
 
         int n = dna.length;
-        if (n < MIN_SIZE) {
+        if (n < MIN_SIZE || n > MAX_SIZE) {
             return false;
         }
+
         for (String row : dna) {
             if (row == null || row.length() != n) {
                 return false;

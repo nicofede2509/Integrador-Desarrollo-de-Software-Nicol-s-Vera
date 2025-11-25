@@ -27,7 +27,7 @@ public class StatsServiceTest {
         when(dnaRecordRepository.countByIsMutant(true)).thenReturn(40L);
         when(dnaRecordRepository.countByIsMutant(false)).thenReturn(100L);
 
-        StatsResponse stats = statsService.getRatio();
+        StatsResponse stats = statsService.getStats(null, null);
 
         assertEquals(40, stats.getContadorMutantes());
         assertEquals(100, stats.getContadorHumanos());
@@ -40,7 +40,7 @@ public class StatsServiceTest {
         when(dnaRecordRepository.countByIsMutant(true)).thenReturn(50L);
         when(dnaRecordRepository.countByIsMutant(false)).thenReturn(0L);
 
-        StatsResponse stats = statsService.getRatio();
+        StatsResponse stats = statsService.getStats(null, null);
 
         assertEquals(50, stats.getContadorMutantes());
         assertEquals(0, stats.getContadorHumanos());
@@ -53,7 +53,7 @@ public class StatsServiceTest {
         when(dnaRecordRepository.countByIsMutant(true)).thenReturn(0L);
         when(dnaRecordRepository.countByIsMutant(false)).thenReturn(0L);
 
-        StatsResponse stats = statsService.getRatio();
+        StatsResponse stats = statsService.getStats(null, null);
 
         assertEquals(0, stats.getContadorMutantes());
         assertEquals(0, stats.getContadorHumanos());
@@ -66,7 +66,7 @@ public class StatsServiceTest {
         when(dnaRecordRepository.countByIsMutant(true)).thenReturn(1L);
         when(dnaRecordRepository.countByIsMutant(false)).thenReturn(3L);
 
-        StatsResponse stats = statsService.getRatio();
+        StatsResponse stats = statsService.getStats(null, null);
 
         assertEquals(1, stats.getContadorMutantes());
         assertEquals(3, stats.getContadorHumanos());
@@ -79,7 +79,7 @@ public class StatsServiceTest {
         when(dnaRecordRepository.countByIsMutant(true)).thenReturn(75L);
         when(dnaRecordRepository.countByIsMutant(false)).thenReturn(75L);
 
-        StatsResponse stats = statsService.getRatio();
+        StatsResponse stats = statsService.getStats(null, null);
 
         assertEquals(75, stats.getContadorMutantes());
         assertEquals(75, stats.getContadorHumanos());

@@ -5,6 +5,7 @@ import com.example.examenmercado.exception.DnaHashCalculationException;
 import com.example.examenmercado.repository.DnaRecordRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -49,5 +50,12 @@ public class MutantService {
         }catch (NoSuchAlgorithmException e){
             throw new DnaHashCalculationException("Error al calcular el hash", e);
         }
+    }
+
+    @Transactional
+    public boolean deleteDnaRecord(String[] dna){
+        String dnaHash = calculateDnaHash(dna);
+        long deleteCount = repository.deleteByDnaHash(dnaHash);
+        return deleteCount > 0;
     }
 }
