@@ -193,11 +193,13 @@ Una vez que la aplicación está corriendo, podés acceder a los siguientes recu
 
 ### 1. Documentación de la API (Swagger)
 Para ver todos los endpoints de forma interactiva y probarlos:
-* **URL:** `http://localhost:8080/swagger-ui.html`
+* **URL:** `http://localhost:8080/swagger-ui.html` (Link para puerto local)
+* **URL:** `https://trabajo-integrador-desarrollo-de-a6l4.onrender.com/swagger-ui/index.html` (Link para página en render, solo cuando esté en deploy)
 
 ### 2. Consola de la Base de Datos (H2)
 Para ver los registros de ADN que se van guardando en la base de datos en memoria:
-* **URL:** `http://localhost:8080/h2-console`
+* **URL:** `http://localhost:8080/h2-console` (Link para puerto local)
+* * **URL:** `https://trabajo-integrador-desarrollo-de-a6l4.onrender.com/h2-console` (Link para página en render, solo cuando esté en deploy)
 
 **Datos de Conexión:**
 * **JDBC URL:** `jdbc:h2:mem:testdb`
